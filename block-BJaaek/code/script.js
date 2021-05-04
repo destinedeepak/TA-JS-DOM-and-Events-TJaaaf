@@ -1,12 +1,19 @@
 boxFirst = document.querySelector('.first');
 boxSecond = document.querySelector('.second');
 
+function generateRandomColor(){
+   let tempArray = [1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'];
+   let color = "#"
+   for(i=0; i<6; i++){
+     color += tempArray[Math.floor(Math.random() * 16)]
+   }
+   return color;
+}
+
 boxFirst.addEventListener("click",function(){
-    const randomColor = Math.floor(Math.random()*16777215).toString(16);
-  boxFirst.style.backgroundColor = "#" + randomColor;
+  boxFirst.style.backgroundColor = generateRandomColor();
 })
 
 boxSecond.addEventListener("mousemove",function(){
-  const randomColor = Math.floor(Math.random()*16777215).toString(16);
-boxSecond.style.backgroundColor = "#" + randomColor;
+boxSecond.style.backgroundColor = generateRandomColor();
 })
