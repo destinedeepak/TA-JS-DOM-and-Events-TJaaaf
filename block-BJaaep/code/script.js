@@ -10,6 +10,9 @@ for (let index = 0; index < 12; index++) {
 
 function handler(li, number){
     li.innerText = ++number;
+    setTimeout(() => {
+        li.innerText =""
+    }, 5000);
 }
 
 Array.from(boxes1.children).forEach((box, index) => {
@@ -35,6 +38,9 @@ for (let index = 0; index < 12; index++) {
 
 function handler1(e){
     e.target.innerText = e.target.dataset.count
+    setTimeout(() => {
+        e.target.innerText =""
+    }, 5000);
 }
 
 boxes2.addEventListener('click', handler1)
