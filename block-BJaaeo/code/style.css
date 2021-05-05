@@ -1,0 +1,133 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* custom styles  */
+html {
+    font-size: 16px;
+}
+
+body{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background: cornflowerblue;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+/* flex / */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex-24 {
+    flex: 0 1 24%;
+}
+.flex-32 {
+    flex: 0 1 32%;
+}
+.flex-72 {
+    flex: 0 1 75%;
+}
+
+h1{
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+
+section {
+    padding-top: 2rem;
+    background: white;
+    padding:0 80px ;
+    height: 100vh;
+}
+
+.result-box{
+    height: 100px;
+    background: black;
+    margin: 2rem auto;
+    border-radius: 10px;
+    text-align: right;
+    line-height: 100px;
+}
+.result {
+    color: white;
+    font-size: 50px;
+    padding-right: 1rem;
+    letter-spacing: 10px;
+}
+
+.box{
+    width: 100px;
+    height: 60px;
+    background: #CFCFCF;
+    font-size: 2rem;
+    color: white;
+    line-height: 60px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.add, .sub, .mul, .div {
+    background: #710133;
+}
+
+.equalBtn {
+    width: 90px;
+    line-height: 260px;
+    background: #018080;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: white;
+}
