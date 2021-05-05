@@ -9,13 +9,21 @@ function generateRandomColor(){
     return color;
  }
 
- for(let i=0; i<100; i++){
+ let displayArry =[];
+ for(let i=0; i<500; i++){
     li = document.createElement('li');
     li.classList.add('item');
-    // li.innerText = Math.floor(Math.random() * 1000)
-    ul.append(li)
+    li.innerText = Math.floor(Math.random() * 1000)
+    displayArry.push(li);
+    ul.append(li);
  }
 
-ul.addEventListener('mousemove',function(){
-    li.innerText = Math.floor(Math.random() * 1000)
+li = document.querySelectorAll('.item');
+function handelMouseMove(){
+    li.forEach((box)=>{
+    box.style.background = generateRandomColor();
+    box.innerText = Math.floor(Math.random() * 1000)
 })
+}
+
+ul.addEventListener('mousemove',handelMouseMove)
