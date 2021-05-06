@@ -91,6 +91,15 @@ input[type='text'] {
 .terms {
   display: inline-block;
 }
+.display {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 90vh;
+  box-shadow: 2px 2px 10px 10px rgb(126, 126, 126);
+  display: none;
+}
 
 .display h1 {
   font-size: 2rem; 
@@ -100,4 +109,10 @@ input[type='text'] {
 .display p {
   font-size: 1rem; 
   font-weight: 700;
+}
+.close-btn {
+  width: 100px;
+}
+.open {
+  display: block;
 }
