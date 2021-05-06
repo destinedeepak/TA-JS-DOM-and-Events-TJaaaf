@@ -1,5 +1,9 @@
 result = document.querySelector('.result');
 
+finalResult = "0";
+
+result.innerText = finalResult;
+
 one = document.querySelector('.one');
 two = document.querySelector('.two');
 three = document.querySelector('.three');
@@ -20,9 +24,7 @@ div = document.querySelector('.div');
 cancel = document.querySelector('.cancel');
 equalBtn = document.querySelector('.equalBtn');
 
-finalResult = "0";
 
-result.innerText = finalResult;
 
 function ensureZero(string){
     if(result.innerText === "0"){
