@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation 👇</title>
+  </head>
+  <body>
+   <div>
+     <form class="container">
+      <div class="form-control">
+        <label for="username">Username:</label>
+        <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Enter a username"
+        minlength="4"  
+        required 
+        >
+     </div>
+     <div class="form-control">
+        <label for="name">Name:</label>
+        <input
+        type="text"
+        name="name"
+        id="name"
+        required
+        placeholder="Enter your name">
+     </div>
+     <div class="form-control">
+        <label for="email">Email:</label>
+        <input
+        type="email"
+        name="email"
+        id="email"
+        minlength="6"
+        placeholder="Enter your email">
+     </div>
+      <div class="form-control">
+        <label for="phone">Phone:</label>
+        <input
+        type="number"
+        name="number"
+        id="number"
+        minlength="7"
+        placeholder="Enter your Mobile No:">
+      </div>
+      <div class="form-control">
+        <label for="password">Password:</label>
+        <input
+        type="password"
+        name="password"
+        id="password"
+        minlength="7"
+        placeholder="password">
+      </div>
+      <div class="form-control">
+        <label for="confirmPassword">confirmPassword:</label>
+        <input
+        type="confirmPassword"
+        name="confirmPassword"
+        id="confirmPassword"
+        minlength="7"
+        placeholder="confirmPassword">
+      </div>
+      <button type="submit">Submit</button>
+     </form>
+   </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
