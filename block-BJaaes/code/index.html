@@ -9,61 +9,59 @@
   <body>
    <div>
      <form class="container">
-      <div class="form-control">
+      <div class="form-control ">
         <label for="username">Username:</label>
         <input
         type="text"
         name="username"
         id="username"
-        placeholder="Enter a username"
-        minlength="4"  
-        required 
-        >
+        placeholder="Enter a username">
+        <small></small>
      </div>
-     <div class="form-control">
+     <div class="form-control ">
         <label for="name">Name:</label>
         <input
         type="text"
         name="name"
         id="name"
-        required
         placeholder="Enter your name">
+        <small></small>
      </div>
      <div class="form-control">
         <label for="email">Email:</label>
         <input
-        type="email"
+        type="text"
         name="email"
         id="email"
-        minlength="6"
         placeholder="Enter your email">
+        <small></small>
      </div>
       <div class="form-control">
         <label for="phone">Phone:</label>
         <input
         type="number"
-        name="number"
-        id="number"
-        minlength="7"
+        name="phone"
+        id="phone"
         placeholder="Enter your Mobile No:">
-      </div>
+      <small></small>      
+     </div>
       <div class="form-control">
         <label for="password">Password:</label>
         <input
         type="password"
         name="password"
         id="password"
-        minlength="7"
         placeholder="password">
+       <small></small>
       </div>
       <div class="form-control">
         <label for="confirmPassword">confirmPassword:</label>
         <input
-        type="confirmPassword"
+        type="password"
         name="confirmPassword"
         id="confirmPassword"
-        minlength="7"
         placeholder="confirmPassword">
+       <small></small>
       </div>
       <button type="submit">Submit</button>
      </form>

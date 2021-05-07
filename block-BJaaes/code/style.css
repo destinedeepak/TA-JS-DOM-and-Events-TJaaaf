@@ -62,8 +62,18 @@ button {
   display: flex;
   flex-direction: column;
 }
+small{
+  color: red;
+}
 input {
   padding: 0.5rem 1rem;
   border: none;
   border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.success input{
+  border:2px solid green;
+}
+.error input{
+  border:2px solid red;
 }
