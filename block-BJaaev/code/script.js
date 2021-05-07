@@ -3,14 +3,14 @@ let input = document.querySelector("input[type='text']");
 let root = document.querySelector("ul");
 
 let todos = [
-    {
-        name: 'Learn Dom',
-        isDone: false
-    },
-    {
-        name: 'play tenis table',
-        isDone: false
-    }
+    // {
+    //     name: 'Learn Dom',
+    //     isDone: false
+    // },
+    // {
+    //     name: 'play tenis table',
+    //     isDone: false
+    // }
 ]
 
 function handler(event){
