@@ -151,7 +151,6 @@ html {
       background: transparent;
   }
   .all_items {
-      border: 1px solid #EAD7D7;
       border-radius: 2px;
   }
 
@@ -167,6 +166,9 @@ html {
   }
   .show {
       display: inline-block;
+  }
+  .selected {
+    border: 1px solid #EAD7D7;
   }
   
   /* .outer{
