@@ -2,8 +2,7 @@ let input = document.querySelector("input");
 let nameOfHouses = document.querySelector(".hero");
 let root = document.querySelector('.people_container');
 
-nameOfHouses.addEventListener('click',handleFilter)
-input.addEventListener('keyup',handleSearch)
+let activeHouse = "";
 
 function handleSearch(event){
     root.innerHTML="" 
@@ -18,7 +17,14 @@ function handleSearch(event){
 
 
 function handleFilter(event){
+    console.log(event.target)
     root.innerHTML="" 
+    let allActiveButtons = document.querySelectorAll(".active");
+    allActiveButtons.forEach(ele=>{
+        ele.classList.remove("active")
+    })
+    event.target.classList.add('active')
+    
     let tempArray = got.houses.filter(house=>{
         return house.name === event.target.innerText
     })
@@ -67,10 +73,10 @@ function createUI(gotArray, rootElement){
         let button = document.createElement('button');
         button.innerText = house.name;
         nameOfHouses.append(button);
-
+        button.addEventListener('click',handleFilter);
         createEachHouseUI(house.people, rootElement)
     })
 }
 
-
+input.addEventListener('keyup',handleSearch)
 createUI(got, root);

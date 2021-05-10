@@ -151,3 +151,6 @@ p {
   background: #E7EDFD;
   border-radius: 5px;
 }
+.active {
+  background: #7cb7ff;
+}
